@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+        <title>Confirmación</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <h2>Página de Confirmación</h2>
+        
+        <h:panelGrid columns="2">
+            
+            <h:outputText value="Saludo:"/>
+            <h:outputText value="#{registrationBean.saludo}"/>
+            
+            <h:outputText value="Nombre:"/>
+            <h:outputText value="#{registrationBean.nombre}"/>
+            
+            <h:outputText value="Apellidos"/>
+            <h:outputText value="#{registrationBean.edad}"/>
+            
+            <h:outputText value="Edad"/>
+            <h:outputText value="#{registrationBean.edad}"/>
+            
+            <h:outputText value="Email"/>
+            <h:outputText value="#{registrationBean.email}"/>
+            
+        </h:panelGrid>
+        
+    </body>
+</html>
