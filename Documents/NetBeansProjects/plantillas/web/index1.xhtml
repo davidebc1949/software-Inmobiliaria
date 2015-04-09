@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <body>
+
+        <ui:composition template="./plantilla.xhtml">
+
+            <ui:define name="top">
+                <h2>BIENVENIDO A MI SITIO</h2>
+            </ui:define>
+
+            <ui:define name="left">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li>
+                        <h:outputLink value="http://www.umariana.edu.co">
+                            <h:outputText value="Universidad Mariana"/>
+                        </h:outputLink>
+                    </li>    
+                    <li>
+                        <h:outputLink value="http://www.udenar.edu.co">
+                            <h:outputText value="Universidad de Nariño"/>
+                        </h:outputLink>                        
+                    </li>
+                </ul>
+            </ui:define>
+
+            <ui:define name="content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
