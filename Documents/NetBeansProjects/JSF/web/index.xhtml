@@ -28,15 +28,21 @@
                 <h:message for="nombre"/>
                 
                 <h:outputLabel value="Apellidos:" for="apellidos"/>
-                <h:inputText id="apellidos" label="Apellidos" required="true" value="#{registrationBean.apellidos}"/>
+                <h:inputText id="apellidos" label="Apellidos" required="true" value="#{registrationBean.apellidos}">
+                    <f:validateLength minimum="3"/>
+                </h:inputText>
                 <h:message for="apellidos"/>
                 
                 <h:outputLabel value="Edad:" for="edad"/>
-                <h:inputText id="edad" label="Edad" size="2" value="#{registrationBean.edad}"/>
+                <h:inputText id="edad" label="Edad" size="2" value="#{registrationBean.edad}">
+                    <f:validateLongRange minimum="0" maximum="100"/>
+                </h:inputText>
                 <h:message for="edad"/>
                 
                 <h:outputLabel value="Direccion Email:" for="email"/>
-                <h:inputText id="email" label="Direccion Email" required="true" value="#{registrationBean.email}"/>
+                <h:inputText id="email" label="Direccion Email" required="true" value="#{registrationBean.email}" >
+                    <f:validator validatorId ="emailValidator"/>
+                </h:inputText>
                 <h:message for="email"/>
                 
                 <h:panelGroup/>
